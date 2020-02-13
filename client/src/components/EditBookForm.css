@@ -1,0 +1,44 @@
+.editBookForm {
+    width: 80%;
+    margin: 50px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid darkgray;
+    padding-bottom: 15px;
+}
+.formHeader {
+    color: black;
+}
+.addFormInput {
+    margin-bottom: 20px;
+}
+
+.addFormInput > label {
+    display: block;
+    padding-right: 10px;
+}
+.addBookBtn {
+    margin-left: 10px;
+}
+.inputSize {
+    width: 270px;
+    height: 20px;
+}
+
+input[name="total_pages"] {
+    width: 100px;
+    height: 20px;
+    line-height: 18px;
+    font-size: 14px;
+}
+input[type="submit"] {
+    width: 100px;
+    height: 30px;
+    background-color: #00833F;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #006E35;
+}

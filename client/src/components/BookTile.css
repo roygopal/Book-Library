@@ -1,0 +1,29 @@
+.bookTile {
+    border: 2px solid lightgray;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    margin: 15px 20px 15px 0;
+}
+.editBook {
+    float: right;
+}
+.bookDetails > .addEllipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.bookName {
+    text-transform: capitalize;
+}
+.authorName {
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: indianred;
+    margin: 0;
+}
+.tileContent {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}

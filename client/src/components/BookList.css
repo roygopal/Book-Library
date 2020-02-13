@@ -1,0 +1,18 @@
+.searchContainer {
+    margin: 50px 0 30px 50px;
+}
+
+.searchInput {
+    width: 300px;
+    height: 20px;
+}
+.booksContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 100%;
+    margin-left: 50px;
+}
+.booksCount {
+    padding-left: 50px;
+}
