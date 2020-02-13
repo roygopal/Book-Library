@@ -23,7 +23,7 @@ class AddBookForm extends React.Component {
     handleDataChange(event) {
         this.setState({ [event.target.name]: event.target.value });
     }
-    handleSubmit(event) {
+    async handleSubmit(event) {
         event.preventDefault();
 
         const newData = {
@@ -33,7 +33,7 @@ class AddBookForm extends React.Component {
             description: this.state.description,
             total_pages: this.state.total_pages
         };
-        this.state.id ? this.props.updateBookDetail(newData) : this.props.addBook(newData);
+        this.state.id ? await this.props.updateBookDetail(newData) : await this.props.addBook(newData);
         this.props.history.push('/');
     }
     render() {
