@@ -10,6 +10,9 @@ export const getBooks = () => dispatch => {
     );
 };
 
+/* 
+ * export var updateBookDetail = function (bookDetail) { return function (dispatch) {...}};
+ */
 export const updateBookDetail = bookDetail => dispatch => {
     axios.put(`/api/books/${bookDetail.id}`, bookDetail)
         .then(res =>
