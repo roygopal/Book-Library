@@ -71,5 +71,9 @@ class AddBookForm extends React.Component {
     }
 }
 
+/*
+connect() method takes two arguments: mapStateToProps and mapDispatchToProps and returns
+a function that can be used to connect the Redux store with a component.
+*/
 export default connect(null, { updateBookDetail, addBook })(AddBookForm);
 
