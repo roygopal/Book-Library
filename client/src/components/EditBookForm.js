@@ -33,6 +33,8 @@ class AddBookForm extends React.Component {
             description: this.state.description,
             total_pages: this.state.total_pages
         };
+        // In a connected component you usually don’t have access to the store itself, but get either dispatch() 
+        // or specific action creators injected as props.
         this.state.id ? await this.props.updateBookDetail(newData) : await this.props.addBook(newData);
         this.props.history.push('/');
     }
